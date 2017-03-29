@@ -19,4 +19,10 @@ public class ReaderServiceImpl implements ReaderService {
 		LOGGER.info("readReaders");
 		return readDao.read();
 	}
+	@Override
+	public void createReader(ReaderDto readerDto) {
+		LOGGER.info("createReader");
+		readDao.createReader(readerDto);
+	}
+
 }

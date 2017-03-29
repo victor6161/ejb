@@ -14,8 +14,6 @@ public class BookDto implements Serializable {
 				+ writer + ", writer_id=" + writerId + ", reader_id=" + readerId + "]";
 	}
 
-
-
 	private static final long serialVersionUID = 5571130680992082254L;
 
 	public BookDto(int id, String bookname, int price, ReaderDto reader, WriterDto writer) {
@@ -31,17 +29,15 @@ public class BookDto implements Serializable {
 
 	}
 
-	
-
 	public BookDto(int id, int writerId) {
-		this.id=id;
-		this.writerId=writerId;
+		this.id = id;
+		this.writerId = writerId;
 	}
 
+	public BookDto(String bookname) {
 
-
-	
-
+		this.bookname = bookname;
+	}
 
 	@Setter
 	@Getter
